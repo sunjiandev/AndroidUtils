@@ -1,6 +1,8 @@
-package com.sunkaisens.androidutils;
+package com.sunkaisens.androidutils.utils;
 
 import android.widget.Toast;
+
+import com.sunkaisens.androidutils.SunApp;
 
 /**
  * @author:sjy

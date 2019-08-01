@@ -26,7 +26,6 @@ import java.util.concurrent.TimeUnit;
 public class ThreadPoolProxy {
 
     private static final String TAG = ThreadPoolProxy.class.getCanonicalName();
-    private static Serializable serializable;
     private ThreadPoolExecutor mThreadPoolExecutor;
     private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
     private static final int CORE_POOL_SIZE = Math.max(2, Math.min(CPU_COUNT - 1, 4));
@@ -38,8 +37,7 @@ public class ThreadPoolProxy {
     private ThreadPoolProxy() {
     }
 
-    public static ThreadPoolProxy getInstance(Serializable serializable) {
-        ThreadPoolProxy.serializable = serializable;
+    public static ThreadPoolProxy getInstance() {
         if (threadPoolProxy == null) {
             synchronized (ThreadPoolProxy.class) {
                 if (threadPoolProxy == null) {
@@ -109,9 +107,4 @@ public class ThreadPoolProxy {
         initExecutor();
         mThreadPoolExecutor.remove(r);
     }
-
-    public Serializable getSerializable() {
-        return serializable;
-    }
-
 }

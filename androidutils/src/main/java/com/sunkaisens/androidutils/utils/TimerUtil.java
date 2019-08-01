@@ -1,4 +1,4 @@
-package com.sunkaisens.androidutils;
+package com.sunkaisens.androidutils.utils;
 
 import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 

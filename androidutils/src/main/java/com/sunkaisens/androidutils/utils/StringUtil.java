@@ -1,4 +1,4 @@
-package com.sunkaisens.androidutils;
+package com.sunkaisens.androidutils.utils;
 
 import android.text.Spannable;
 import android.text.SpannableString;

@@ -6,7 +6,7 @@ package com.sunkaisens.androidutils;
  * @email:sjy_mail@163.com
  * @Description:
  */
-class GlobalVar {
+public class GlobalVar {
 
     public static final String INTENT_DATA = "intent_data";
     /**

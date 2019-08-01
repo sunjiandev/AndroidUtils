@@ -1,6 +1,8 @@
-package com.sunkaisens.androidutils;
+package com.sunkaisens.androidutils.utils;
 
 import android.os.Environment;
+
+import com.sunkaisens.androidutils.SunApp;
 
 import org.apache.commons.lang3.StringUtils;
 
