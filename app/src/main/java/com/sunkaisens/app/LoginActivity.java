@@ -1,9 +1,10 @@
 package com.sunkaisens.app;
 
+import android.os.Handler;
 import android.view.View;
 
-import com.sunkaisens.androidutils.SunApp;
 import com.sunkaisens.androidutils.base.BaseActivity;
+import com.sunkaisens.androidutils.utils.SpUtils;
 import com.sunkaisens.androidutils.utils.ToastUtil;
 import com.sunkaisens.app.contract.LoginContract;
 import com.sunkaisens.app.presenter.LoginPresenter;
@@ -34,15 +35,23 @@ public class LoginActivity extends BaseActivity<LoginContract.View, LoginPresent
     public void onSuccess() {
 
         ToastUtil.showToast("登录成功");
+
     }
 
     @Override
     public void onFailed(String reason) {
-        ToastUtil.showToast("登录失败："+reason);
+        ToastUtil.showToast("登录失败：" + reason);
 
     }
 
     public void login(View view) {
-        presenter.login("sunjianyun","123456");
+        presenter.login("sunjianyun", "123456");
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        presenter.detachView();
     }
 }

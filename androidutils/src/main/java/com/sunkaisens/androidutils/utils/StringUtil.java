@@ -22,11 +22,12 @@ import java.util.regex.Pattern;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 
+
 /**
- * @author:sjy
- * @date:2019-07-22
- * @email:sjy_mail@163.com
- * @Description:
+ * Copyright (C), 2015-2019, 北京视游互动科技有限公司
+ * Author: sunjianyun
+ * Date: 2019/8/28 9:54
+ * Description: 字符串处理的工具类
  */
 public class StringUtil {
 

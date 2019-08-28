@@ -35,5 +35,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':androidutils')
 
-    // implementation 'com.github.sunjiandev:AndroidUtils:0.0.3'
+
+    // implementation 'com.github.sunjiandev:AndroidUtils:0.0.5'
+
 }

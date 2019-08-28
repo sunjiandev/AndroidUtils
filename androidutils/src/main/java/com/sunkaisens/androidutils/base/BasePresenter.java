@@ -33,7 +33,7 @@ public class BasePresenter<T> {
         return getView() != null;
     }
 
-    protected void detachView() {
+    public void detachView() {
         if (mViewRef != null) {
             mViewRef.clear();
             mViewRef = null;

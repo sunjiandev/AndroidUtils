@@ -2,6 +2,10 @@ package com.sunkaisens.androidutils;
 
 import android.content.Context;
 
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
+import com.orhanobut.logger.PrettyFormatStrategy;
+
 /**
  * @author:sjy
  * @date:2019-07-22
@@ -37,5 +41,7 @@ public class SunApp {
 
     public void init(Context context) {
         this.context = context;
+        PrettyFormatStrategy formatStrategy = PrettyFormatStrategy.newBuilder().tag("sjy").methodCount(0).showThreadInfo(true).methodOffset(7).build();
+        Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
     }
 }
