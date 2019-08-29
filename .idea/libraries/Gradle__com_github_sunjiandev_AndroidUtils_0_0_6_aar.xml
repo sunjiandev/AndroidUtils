@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.sunjiandev:AndroidUtils:0.0.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3b9d80f470db87ed0696a6e51ffa355/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3b9d80f470db87ed0696a6e51ffa355/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.sunjiandev/AndroidUtils/0.0.6/67d3be7c7560bf0cc2f40267d820b444f92fe262/AndroidUtils-0.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,10 +1,9 @@
 package com.sunkaisens.app;
 
-import android.os.Handler;
 import android.view.View;
 
+import com.orhanobut.logger.Logger;
 import com.sunkaisens.androidutils.base.BaseActivity;
-import com.sunkaisens.androidutils.utils.SpUtils;
 import com.sunkaisens.androidutils.utils.ToastUtil;
 import com.sunkaisens.app.contract.LoginContract;
 import com.sunkaisens.app.presenter.LoginPresenter;
@@ -35,6 +34,7 @@ public class LoginActivity extends BaseActivity<LoginContract.View, LoginPresent
     public void onSuccess() {
 
         ToastUtil.showToast("登录成功");
+        Logger.d("登录成功");
 
     }
 

@@ -36,6 +36,6 @@ dependencies {
     implementation project(path: ':androidutils')
 
 
-    // implementation 'com.github.sunjiandev:AndroidUtils:0.0.5'
+//     implementation 'com.github.sunjiandev:AndroidUtils:0.0.6'
 
 }
